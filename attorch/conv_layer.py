@@ -10,7 +10,7 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .conv_kernels import conv2d_forward_kernel
+from .kernel.conv_kernels import conv2d_forward_kernel
 from .types import Context, Device
 from .utils import get_output_dtype
 

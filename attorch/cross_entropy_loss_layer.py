@@ -10,9 +10,9 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .cross_entropy_loss_kernels import cross_entropy_loss_backward_kernel, \
+from .kernel.cross_entropy_loss_kernels import cross_entropy_loss_backward_kernel, \
     cross_entropy_loss_forward_kernel
-from .softmax_kernels import BLOCK_SIZE_BATCH_heuristic
+from .kernel.softmax_kernels import BLOCK_SIZE_BATCH_heuristic
 from .types import Context
 from .utils import get_output_dtype
 

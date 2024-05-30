@@ -10,7 +10,7 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .p_loss_kernels import p_loss_backward_kernel, p_loss_forward_kernel
+from .kernel.p_loss_kernels import p_loss_backward_kernel, p_loss_forward_kernel
 from .types import Context
 from .utils import get_output_dtype
 

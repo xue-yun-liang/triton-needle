@@ -10,8 +10,8 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .layer_norm_kernels import layer_norm_backward_kernel, layer_norm_forward_kernel
-from .softmax_kernels import BLOCK_SIZE_BATCH_heuristic
+from .kernel.layer_norm_kernels import layer_norm_backward_kernel, layer_norm_forward_kernel
+from .kernel.softmax_kernels import BLOCK_SIZE_BATCH_heuristic
 from .types import Context, Device
 from .utils import get_output_dtype
 

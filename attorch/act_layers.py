@@ -13,7 +13,7 @@ from torch import nn
 from torch.cuda.amp import custom_bwd, custom_fwd
 from triton import cdiv
 
-from .act_kernels import act_func_backward_kernel, act_func_forward_kernel
+from .kernel.act_kernels import act_func_backward_kernel, act_func_forward_kernel
 from .types import Context
 
 

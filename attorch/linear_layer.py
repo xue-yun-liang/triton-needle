@@ -10,8 +10,8 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .act_kernels import act_func_backward_kernel
-from .linear_kernels import linear_forward_kernel
+from .kernel.act_kernels import act_func_backward_kernel
+from .kernel.linear_kernels import linear_forward_kernel
 from .types import Context, Device
 from .utils import get_output_dtype
 

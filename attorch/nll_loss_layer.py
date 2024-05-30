@@ -10,7 +10,7 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .nll_loss_kernels import nll_loss_backward_kernel, nll_loss_forward_kernel, \
+from .kernel.nll_loss_kernels import nll_loss_backward_kernel, nll_loss_forward_kernel, \
     BLOCK_SIZE_BATCH_heuristic
 from .types import Context
 from .utils import get_output_dtype

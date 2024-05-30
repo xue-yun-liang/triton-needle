@@ -10,7 +10,7 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .softmax_kernels import softmax_backward_kernel, softmax_forward_kernel
+from .kernel.softmax_kernels import softmax_backward_kernel, softmax_forward_kernel
 from .types import Context
 from .utils import get_output_dtype
 

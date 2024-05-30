@@ -13,7 +13,7 @@ from torch import nn
 from torch.cuda.amp import custom_bwd, custom_fwd
 from triton import cdiv
 
-from .dropout_kernels import dropout_backward_kernel, dropout_forward_kernel
+from .kernel.dropout_kernels import dropout_backward_kernel, dropout_forward_kernel
 from .types import Context
 
 

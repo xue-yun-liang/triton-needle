@@ -12,7 +12,7 @@ from torch import nn
 from torch.cuda.amp import custom_bwd, custom_fwd
 from triton import cdiv
 
-from .glu_kernels import glu_backward_kernel, glu_forward_kernel
+from .kernel.glu_kernels import glu_backward_kernel, glu_forward_kernel
 from .types import Context
 
 
