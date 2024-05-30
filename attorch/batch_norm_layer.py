@@ -11,8 +11,8 @@ from torch import Tensor
 from torch import nn
 from triton import cdiv
 
-from .act_kernels import act_func_backward_kernel
-from .batch_norm_kernels import batch_norm_backward_kernel, batch_norm_forward_kernel
+from .kernel.act_kernels import act_func_backward_kernel
+from .kernel.batch_norm_kernels import batch_norm_backward_kernel, batch_norm_forward_kernel
 from .types import Context, Device
 
 
