@@ -6,7 +6,7 @@ Kernels for convolution.
 import triton
 import triton.language as tl
 
-from .utils import allow_tf32, get_n_stages
+from ..utils import allow_tf32, get_n_stages
 
 
 def conv2d_forward_config(

@@ -6,7 +6,7 @@ Kernels for p-norm-induced losses.
 import triton
 import triton.language as tl
 
-from .utils import element_wise_kernel_configs
+from ..utils import element_wise_kernel_configs
 
 
 @triton.autotune(

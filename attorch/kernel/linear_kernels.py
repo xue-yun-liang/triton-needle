@@ -7,7 +7,7 @@ import triton
 import triton.language as tl
 
 from .act_kernels import apply_act_func
-from .utils import allow_tf32, get_n_stages
+from ..utils import allow_tf32, get_n_stages
 
 
 def linear_forward_config(

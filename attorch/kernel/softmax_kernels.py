@@ -9,7 +9,7 @@ import triton
 import triton.language as tl
 from triton import next_power_of_2
 
-from .utils import warps_kernel_configs
+from ..utils import warps_kernel_configs
 
 
 def BLOCK_SIZE_BATCH_heuristic(args: Dict) -> int:

@@ -7,7 +7,7 @@ import triton
 import triton.language as tl
 
 from .act_kernels import apply_act_func, apply_act_func_grad
-from .utils import element_wise_kernel_configs
+from ..utils import element_wise_kernel_configs
 
 
 @triton.autotune(

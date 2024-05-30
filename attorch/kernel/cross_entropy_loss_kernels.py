@@ -8,7 +8,7 @@ import triton.language as tl
 from triton import next_power_of_2
 
 from .softmax_kernels import BLOCK_SIZE_BATCH_heuristic
-from .utils import warps_kernel_configs
+from ..utils import warps_kernel_configs
 
 
 @triton.autotune(
